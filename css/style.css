@@ -246,6 +246,7 @@ a {
 
 .main-reservation-block {
 	text-align: center;
+	position: relative;
 }
 
 .main-reservation-title {
@@ -274,6 +275,98 @@ a {
 	line-height: 26px;
 	color: #ffffff;
 	text-transform: uppercase;
+}
+
+.main-reservation-form {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	width: 458px;
+	padding: 0 55px;
+	left: 315px;
+}
+
+.main-reservation-form label {
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.date-arrival-label {
+	margin-top: 55px;
+}
+
+.main-reservation-form input {
+	border: none;
+	background-color: #f2f2f2;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 323px;
+	padding: 11px;
+}
+
+.guest-amount-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 53px;
+}
+
+.guest-amount-wrapper div {
+	background-color: #f2f2f2;
+	display: flex;
+}
+
+.guest-amount-wrapper span {
+	font-weight: 700;
+}
+
+.guest-amount-wrapper .adults-amount,
+.guest-amount-wrapper .children-amount {
+	padding: 0;
+	margin: 0;
+	height: 38px;
+	width: 38px;
+	text-align: center;
+}
+
+.guest-amount-wrapper button {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: #f2f2f2;
+	font-size: 0;
+	width: 38px;
+	height: 38px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.guest-amount-wrapper .minus-amount {
+	background-image: url('../img/png/minus.png');
+	background-position: center;
+}
+
+.guest-amount-wrapper .plus-amount {
+	background-image: url('../img/png/plus.png');
+	background-position: center;
+}
+
+.submit-reservation-form {
+	padding: 17px 0;
+	margin: 0;
+	margin-bottom: 55px;
+	border: none;
+	background-color: #81b3d2;
+	width: 100%;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 21px;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 /* Конец основного блока*/ 
@@ -381,4 +474,19 @@ a {
 	padding: 0;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.show-popup {
+	display: block;
+	height: 395px;
+	overflow: hidden;
+	animation-name: popup;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+@keyframes popup {
+	from {
+		height: 0%;
+	}
 }

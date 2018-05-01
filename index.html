@@ -102,6 +102,31 @@
 				<h2 class="main-reservation-title">Заинтересовались?</h2>
 				<p class="main-reservation-info">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<button class="main-reservation-button">Поиск гостиницы в Седоне</button>
+				<form class="main-reservation-form">
+					<label class="date-arrival-label">
+						Дата заезда:
+						<input type="text" value='24 апреля 2017'>
+					</label>
+					<label class="date-departure-label">
+						Дата выезда:
+						<input type="text" value='4 июля 2017'>
+					</label>
+					<div class="guest-amount-wrapper">
+						<span>Взрослые:</span>
+						<div>
+							<button class="minus-amount">-</button>
+							<input type="text" name='adults-amount' class='adults-amount' value='2'>
+							<button class="plus-amount">+</button>
+						</div>
+						<span>Дети:</span>
+						<div>
+							<button class="minus-amount">-</button>
+							<input type="text" name='children-amount' class='children-amount' value='0'>
+							<button class="plus-amount">+</button>
+						</div>
+					</div>
+					<button type="submit" class='submit-reservation-form'>Найти</button>
+				</form>
 			</section>
 			<section class="main-map-block">
 				<img src="img/jpg/map.jpg" alt="Карта местонахождения города Седона">
@@ -127,5 +152,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src='javascript/main.js'></script>
 	</body>
 </html>
