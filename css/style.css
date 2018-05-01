@@ -1,0 +1,384 @@
+.index-body {
+	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000000;
+	line-height: 26px;
+	background-color: #f2f2f2;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+/* Начало блока навигации */
+
+.main-navigation-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-navigation-item {
+	padding: 14px 0 16px;
+	text-align: center;
+	margin: 0;
+	min-width: 239px;
+}
+
+.main-navigation-item_2 {
+	margin-right: auto;
+}
+
+.main-navigation-item_3 {
+	margin-left: auto;
+}
+
+.main-navigation-link {
+	color: #000000;
+	font-weight: 700;
+}
+
+.navigation-logo-wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.navigation-item-logo_image {
+	position: absolute;
+	width: 138px;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+}
+
+/* Конец блока навигации*/
+
+/* Начало основного блока */
+
+.main-logo-block {
+	margin-bottom: 26px;
+}
+
+.main-logo-wrapper {
+	background-image: url('../img/jpg/main-bg.jpg');
+	background-position: 0 -83px;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 10;
+	padding-top: 76px;
+	margin-bottom: 61px;
+}
+
+.main-logo-wrapper::after {
+	content: "";
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 57px;
+	background-image: url('../img/png/main-bg-mask.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	bottom: 0;
+	left: 0;
+}
+
+.main-logo-img {
+	margin-bottom: 15px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.main-title-block {
+	margin: 0;
+	padding: 0 30% 0;
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.main-advantages-block {
+	margin-bottom: 50px;
+}
+
+.main-advantages-description {
+	margin: 0;
+	margin-bottom: 51px;
+	padding: 0;
+	text-align: center;
+}
+
+.main-advantages-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-advantages-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.advantages-item-block {
+	padding-top: 47px;
+	padding-bottom: 59px;
+	width: 400px;
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+.advantages-item-block h3,
+.advantages-item-block p {
+	margin: 0;
+	padding: 0;
+}
+
+.advantages-item-block h3 {
+	padding: 0 120px;
+	margin-bottom: 21px;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.advantages-item-block .advantages-item-number {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 19px;
+}
+
+.advantages-item-block .advantages-item-info {
+	padding: 0 45px;
+	line-height: 21px;
+}
+
+.advantages-item-big .advantages-item-block {
+	background-color: #81b3d2;
+	color: #ffffff;
+}
+
+.main-advantages-item:nth-child(2) {
+	flex-direction: row-reverse;
+}
+
+.advantages-features-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	display: flex;
+}
+
+.advantages-features-item {
+	text-align: center;
+	width: 400px;
+	position: relative;
+	padding-bottom: 82px;
+}
+
+.advantages-features-item::after {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 56px;
+	left: 158px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.features-item-1::after {
+	background-image: url('../img/svg/icon-1.svg');
+}
+
+.features-item-2::after {
+	background-image: url('../img/svg/icon-2.svg');
+}
+
+.features-item-3::after {
+	background-image: url('../img/svg/icon-3.svg');
+}
+
+.advantages-features-item h4,
+.advantages-features-item p {
+	margin: 0;
+	padding: 0;
+}
+
+.advantages-features-item .advantages-features-title {
+	font-size: 21px;
+	line-height: 21px;
+	padding-top: 161px;
+	margin-bottom: 24px;
+}
+
+.advantages-features-item p {
+	line-height: 21px;
+	padding: 0 55px;
+}
+
+.main-reservation-block {
+	text-align: center;
+}
+
+.main-reservation-title {
+	margin: 0;
+	margin-bottom: 24px;
+	padding: 0;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.main-reservation-info {
+	margin: 0;
+	margin-bottom: 47px;
+	padding: 0;
+	line-height: 24px;
+	padding: 0 380px;
+}
+
+.main-reservation-button {
+	padding: 30px 139px;
+	border-style: none;
+	background-color: #766357;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+/* Конец основного блока*/ 
+
+/* Начало блока подвала */
+
+.main-footer {
+	position: relative;
+}
+
+.main-footer-wrapper {
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-top: 30px;
+	padding-bottom: 45px;
+}
+
+.footer-hashtag-block {
+	padding: 0;
+	padding-top: 15px;
+	margin: 0;
+	width: 400px;
+	text-align: center;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.footer-social-list {
+	margin: 0;
+	padding: 0;
+	width: 400px;
+	list-style: none;
+	text-align: center;
+}
+
+.footer-social-item {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding-top: 5px;
+	padding-right: 2px;
+}
+
+.footer-social-link {
+	font-size: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+	z-index: 10;
+}
+
+.footer-social-item::after {
+	content: '';
+	position: absolute;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	z-index: 100;
+	width: 25px;
+	height: 25px;
+}
+
+.social-link-twitter::after {
+	background-image: url('../img/svg/twitter.svg');
+	top: 22px;
+	left: 15px;
+}
+
+.social-link-facebook::after {
+	background-image: url('../img/svg/fb-icon.svg');
+	top: 18px;
+	left: 17px;
+}
+
+.social-link-youtube::after {
+	background-image: url('../img/svg/youtube.svg');
+	top: 21px;
+	left: 13px;
+}
+
+.footer-copyrights-block {
+	margin: 0;
+	padding: 0;
+	padding-top: 7px;
+	width: 400px;
+	text-align: center;
+}
+
+.footer-copyrights-info {
+	margin: 0;
+	padding: 0;
+	padding-top: 8px;
+	padding-right: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-copyrights-logo {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
